@@ -1,0 +1,6 @@
+display: inline 
+Makes element fit content but width and height cannot be set.
+Element stays on the same line (if enough space).
+
+display: inline-block
+Element stays on the same line (if enough space) but width and height can be set.
