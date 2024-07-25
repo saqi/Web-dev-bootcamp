@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      * {
+        margin: 0;
+      }
+
+      .flexc {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        border: none;
+      }
+
+      .container {
+        width: 748px;
+        height: 746px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 9px;
+      }
+
+      .red {
+        background-color: #e72f24;
+      }
+
+      .g1 {
+        background-color: #f0f1ec;
+        grid-column: 2 / -1;
+      }
+      .g2 {
+        background-color: #f0f1ec;
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+      }
+      .g3 {
+        background-color: #f0f1ec;
+        grid-column: 2 / span 2;
+        grid-row: 2 / 4;
+      }
+      .purple {
+        background-color: #004592;
+        border-bottom: 10px solid black;
+      }
+      .g4 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+      .g5 {
+        background-color: #f0f1ec;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .black {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="flexc">
+      <div class="container">
+        <div class="red"></div>
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="purple"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+    </div>
+  </body>
+</html>
